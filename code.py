@@ -9,11 +9,11 @@ import time
 # for testing
 
 BLANK = (0,0,0)
-BLUE = (0,0,32)     # 50's
-BG = (0,16,16)      # 60's 
-GREEN = (0,32,0)    # 70's
-ORANGE = (24,8,0)   # 80's
-RED = (32,0,0)      # 90's
+BLUE = (0,0,24)     # 50's
+BG = (0,12,12)      # 60's 
+GREEN = (0,24,0)    # 70's
+ORANGE = (18,6,0)   # 80's
+RED = (24,0,0)      # 90's
 TEMP_COLOR = {5:BLUE, 6:BG, 7:GREEN, 8:ORANGE, 9:RED}
 
 while True:
