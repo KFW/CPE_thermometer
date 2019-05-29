@@ -6,8 +6,6 @@
 from adafruit_circuitplayground.express import cpx
 import time
 
-# for testing
-
 BLANK = (0,0,0)
 BLUE = (0,0,24)     # 50's
 BG = (0,12,12)      # 60's 
@@ -33,6 +31,5 @@ while True:
             for i in range(digit):
                 cpx.pixels[9 - i] = TEMP_COLOR[tens]   # use '9 -' since pixels
                                                         # in reverse order
-
 
     time.sleep(60) # cycle every 60 seconds
