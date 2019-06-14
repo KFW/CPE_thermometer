@@ -1,9 +1,8 @@
 # Office Thermometer
-# for Adafruit Circuit Python Express
+# for Adafruit Circuit Python Express (CPE)
 # Uses color to indicate temp range, and then NeoPixels for exact temp
 # light sensor turns off NeoPixels if it's dark
-# has been running hot - may need to make temp adjustment
-# / are NeoPixels warming the sensor?
+
 
 from adafruit_circuitplayground.express import cpx
 import time
@@ -22,6 +21,8 @@ while True:
     if cpx.light > 10: # don't display temp if room is dark
         temp = int(cpx.temperature * 1.8 + 32.5)    # extra 0.5 to make sure temp 
                                                     # rounds correctly
+        temp -= 6   # CPE seems to consistently read 6 degrees F too high
+                    # consistent on 2 different CPEs
         if temp < 50: temp = 50 # in the unlikely event temp is lower than 50's
         if temp > 99: temp = 99 # in unlikely event temp in the 100's
         tens = temp//10
