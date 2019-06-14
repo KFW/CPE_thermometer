@@ -1,17 +1,20 @@
 # Office Thermometer
 # for Adafruit Circuit Python Express
-# Uses color to indicate temp range, and then neopixels for exact temp
+# Uses color to indicate temp range, and then NeoPixels for exact temp
 # light sensor turns off NeoPixels if it's dark
+# has been running hot - may need to make temp adjustment
+# / are NeoPixels warming the sensor?
 
 from adafruit_circuitplayground.express import cpx
 import time
 
+# low values on NeoPixels 
 BLANK = (0,0,0)
-BLUE = (0,0,24)     # 50's
-BG = (0,12,12)      # 60's 
-GREEN = (0,24,0)    # 70's
-ORANGE = (18,6,0)   # 80's
-RED = (24,0,0)      # 90's
+BLUE = (0,0,16)     # 50's
+BG = (0,8,8)      # 60's 
+GREEN = (0,16,0)    # 70's
+ORANGE = (12,4,0)   # 80's
+RED = (16,0,0)      # 90's
 TEMP_COLOR = {5:BLUE, 6:BG, 7:GREEN, 8:ORANGE, 9:RED}
 
 while True:
