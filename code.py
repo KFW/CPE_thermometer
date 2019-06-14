@@ -2,6 +2,7 @@
 # for Adafruit Circuit Python Express (CPE)
 # Uses color to indicate temp range, and then NeoPixels for exact temp
 # light sensor turns off NeoPixels if it's dark
+# assumes orientation with USB port down
 
 
 from adafruit_circuitplayground.express import cpx
