@@ -10,11 +10,11 @@ import time
 
 # low values on NeoPixels 
 BLANK = (0,0,0)
-BLUE = (0,0,16)     # 50's
-BG = (0,8,8)      # 60's 
-GREEN = (0,16,0)    # 70's
-ORANGE = (12,4,0)   # 80's
-RED = (16,0,0)      # 90's
+BLUE = (0,0,4)     # 50's
+BG = (0,2,2)      # 60's 
+GREEN = (0,4,0)    # 70's
+ORANGE = (3,1,0)   # 80's
+RED = (14,0,0)      # 90's
 TEMP_COLOR = {5:BLUE, 6:BG, 7:GREEN, 8:ORANGE, 9:RED}
 
 while True:
